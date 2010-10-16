@@ -13,3 +13,8 @@ This is a demo application that shows how to integrate the two using the
 'elfinder' ruby gem. 
 
   http://github.com/phallstrom/el_finder
+
+=== Requirements for this demo
+
+* el_finder ruby gem
+* ImageMagick's mogrify command
