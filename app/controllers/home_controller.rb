@@ -13,13 +13,7 @@ class HomeController < ApplicationController
     ).run(params)
 
     headers.merge!(h)
-
-    if r.empty?
-      render :nothing => true, :layout => false
-    else
-      render :text => r.to_json , :layout => false
-    end
-
+    render (r.empty? ? {:nothing => true} : {:text => r.to_json}), :layout => false
   end
 
 end
