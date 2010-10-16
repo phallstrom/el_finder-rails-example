@@ -1,0 +1,15 @@
+== Rails elFinder Example Application
+
+Rails is a web-application framework that includes everything needed to create
+database-backed web applications according to the Model-View-Control pattern.
+
+elFinder is an open-source file manager for web, written in JavaScript using
+jQuery UI. As you can see its creation is inspired by simplicity and
+convenience of Finder program used in Mac OS X operating system.
+
+  http://elrte.org/elfinder
+
+This is a demo application that shows how to integrate the two using the
+'elfinder' ruby gem. 
+
+  http://github.com/phallstrom/el_finder
