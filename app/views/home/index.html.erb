@@ -1,12 +1,11 @@
 
-<script type="text/javascript" charset="utf-8">
+<%= javascript_tag do %>
   $().ready(function() {
     $('#elfinder').elfinder({
       url: '/elfinder',
-      lang: 'en',
-      curURL: 'root'
+      lang: 'en'
     })
   })
-</script>
+<% end %>
 
 <div id='elfinder'></div>
