@@ -9,15 +9,16 @@ class HomeController < ApplicationController
       :url => '/system/elfinder',
       :perms => {
         'forbidden' => {:read => false, :write => false, :rm => false},
-        /README/ => {:write => false}
+        /README/ => {:write => false},
+        /logos\/.*\.png$/ => {:write => false, :rm => false},
       },
       :extractors => {
         'application/zip' => ['unzip', '-qq', '-o'],
-        'application/x-gzip' => ['tar', '-xzf']
+        'application/x-gzip' => ['tar', '-xzf'],
       },
       :archivers => { 
         'application/zip' => ['.zip', 'zip', '-qr9'],
-        'application/x-gzip' => ['.tgz', 'tar', '-czf']
+        'application/x-gzip' => ['.tgz', 'tar', '-czf'],
       }
     ).run(params)
 
