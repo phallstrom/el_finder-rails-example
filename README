@@ -1,3 +1,14 @@
+=== WHOA! READ THIS! WARNING! HEADS UP! PAY ATTENTION!
+
+This demo uses a slightly modified version of the elfinder.js files.  The
+modifications have been submitted back to the core, but aren't scheduled to be
+released until 1.2.
+
+So if you use this example, be sure to bring along the elfinder.min.js and
+elfinder.full.js files.
+
+See http://elrte.org/redmine/issues/256 for more information.
+
 == Rails elFinder Example Application
 
 Rails is a web-application framework that includes everything needed to create

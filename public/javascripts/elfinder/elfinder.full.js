@@ -1951,10 +1951,18 @@ elFinder.prototype.ui.prototype.commands = {
 				b = $('<p class="el-finder-add-field"><span class="ui-state-default ui-corner-all"><em class="ui-icon ui-icon-circle-plus"/></span>'+this.fm.i18n('Add field')+'</p>')
 					.click(function() { $(this).before('<p><input type="file" name="upload[]"/></p>'); }),
 				f = '<form method="post" enctype="multipart/form-data" action="'+self.fm.options.url+'" target="'+id+'"><input type="hidden" name="cmd" value="upload" /><input type="hidden" name="current" value="'+self.fm.cwd.hash+'" />',
+
 				d = $('<div/>'),
 				i = 3;
 
 				while (i--) { f += '<p><input type="file" name="upload[]"/></p>'; }
+
+        var rails_csrf_token = $('meta[name=csrf-token]').attr('content'),
+            rails_csrf_param = $('meta[name=csrf-param]').attr('content');
+        if (rails_csrf_param != null && rails_csrf_token != null) {
+          f += '<input name="'+rails_csrf_param+'" value="'+rails_csrf_token+'" type="hidden" />';
+        }
+
 				f = $(f+'</form>');
 				
 				d.append(f.append(e.hide()).prepend(m).append(b)).dialog({

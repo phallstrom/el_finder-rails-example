@@ -1,8 +1,5 @@
 class HomeController < ApplicationController
 
-  # FIXME - This isn't ideal and should be resolved on the client side.
-  skip_before_filter :verify_authenticity_token, :only => ['elfinder']
-
   def index
   end
 
