@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       :perms => {
         'forbidden' => {:read => false, :write => false, :rm => false},
         /README/ => {:write => false},
-        /logos\/.*\.png$/ => {:write => false, :rm => false},
+        /^logos\/.*\.png$/ => {:write => false, :rm => false},
       },
       :extractors => {
         'application/zip' => ['unzip', '-qq', '-o'],
