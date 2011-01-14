@@ -10,7 +10,7 @@ class HomeController < ApplicationController
       :perms => {
         'forbidden' => {:read => false, :write => false, :rm => false},
         /README/ => {:write => false},
-        /^logos\/.*\.png$/ => {:write => false, :rm => false},
+        /pjkh\.png$/ => {:write => false, :rm => false},
       },
       :extractors => {
         'application/zip' => ['unzip', '-qq', '-o'],
@@ -19,7 +19,8 @@ class HomeController < ApplicationController
       :archivers => { 
         'application/zip' => ['.zip', 'zip', '-qr9'],
         'application/x-gzip' => ['.tgz', 'tar', '-czf'],
-      }
+      },
+      :thumbs => true
     ).run(params)
 
     headers.merge!(h)
