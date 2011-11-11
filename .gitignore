@@ -1,5 +1,8 @@
+.bundle/
+bin/*
 log/*
 tmp/**/*
 .DS_Store
+.rake_tasks~
 *.swp
-public/system/elfinder/.thumbs
+public/system/
