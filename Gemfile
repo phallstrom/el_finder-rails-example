@@ -1,7 +1,7 @@
-source 'http://rubygems.org'
+source :rubygems
 
-gem 'rails', '3.0.0'
+gem 'rails'
 gem 'jquery-rails'
+gem 'sass-rails'
 gem 'sqlite3-ruby', :require => 'sqlite3'
-gem 'mongrel'
 gem 'el_finder'
