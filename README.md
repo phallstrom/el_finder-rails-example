@@ -2,6 +2,10 @@
 
 This demo uses latest git version of elFinder 2.x which is not yet released.
 
+### Be sure to check out the various branches
+
+There are several branches that you might be interested in depending upon
+what version of Rails and elFinder you wish to run.
 
 ## Rails elFinder Example Application
 
