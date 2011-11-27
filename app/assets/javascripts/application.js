@@ -13,7 +13,7 @@
  */
 $(function() {
   $('#elfinder').elfinder({
-    lang: 'ru',
+    lang: 'en',
     height: '600',
     url: '/elfinder'
   });
