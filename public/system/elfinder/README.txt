@@ -2,4 +2,4 @@ elFinder is an open-source file manager for web, written in JavaScript using jQu
 
 For more information please visit:
 
-http://elrte.org/elfinder
+http://elfinder.org
